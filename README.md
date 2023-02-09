@@ -23,7 +23,7 @@ version: '2'
 services:
 
   sshtunnel:
-    image: acaranta/sshtunnel
+    image: acaranta/docker-sshtunnel
     container_name: sshtunnel
     ports:
       - "2525:2525"
@@ -55,7 +55,7 @@ version: '2'
 services:
 
   sshtunnel:
-    image: acaranta/sshtunnel
+    image: acaranta/docker-sshtunnel
     container_name: sshtunnel
     volumes:
       - ./sshtunnel/data/:/data/:ro
